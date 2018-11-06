@@ -1,12 +1,8 @@
 $(document).ready(function(){
+  //Slider 
+  $('.slider').bxSlider();
 
-
-
-     //Slider 
-     $('.slider').bxSlider();
-
-	  $("a").on('click', function(event) {
-
+	$("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -28,25 +24,17 @@ $(document).ready(function(){
   });
 
 
-	  	 $(window).scroll(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 200) {
+      $('#scroll-top').fadeIn();
+    }else{
+      $('#scroll-top').fadeOut();
+    }
+  });
 
-	  	 	if ($(this).scrollTop() > 200) {
-
-	  	 		$('#scroll-top').fadeIn();
-	  	 	}
-	  	 	else
-	  	 	{
-	  	 		$('#scroll-top').fadeOut();
-	  	 	}
-
-	  	 });
-
-	  	 $('#scroll-top').click(function(){
-
-	  	 	$('html, body').animate({scrollTop: 0}, 1000)
-	  	 });
-
-
-	  	//Validation du formulaire de contact
-
+  $('#scroll-top').click(function(){
+    $('html, body').animate({scrollTop: 0}, 1000)
+  });
+      
+	//Validation du formulaire de contact
 });

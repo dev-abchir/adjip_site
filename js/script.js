@@ -1,11 +1,9 @@
- 
- $(document).ready(function(){
+$(document).ready(function(){
 
- 	  //Slider 
-     $('.slider').bxSlider();
+ 	//Slider 
+  $('.slider').bxSlider();
 
-	  $("a").on('click', function(event) {
-
+	$("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -19,15 +17,9 @@
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
-
-      
-
-
-
 });
