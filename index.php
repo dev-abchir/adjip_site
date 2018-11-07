@@ -4,18 +4,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AdjiP_Site</title>
+	<title>Educ App: l'Education à la porté d'un click</title>
 	<!--Font Awesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<!--Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!--BxSlider-->
-	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-	 <!--Normalize CSS-->
-	 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-	 <link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<!--Normalize CSS-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+	<link rel="stylesheet" type="text/css" href="css/slick-logos-slider.css">
 </head>
 <body>
 
@@ -39,14 +39,14 @@
 	<!--Start Navigation-->
 	<nav>
 		<div class="logo">
-			<a href=""><h2>AdjiP</h2></a>
-			<p>Lier la diaspora djiboutienne</p>
+			<a href="#" class="brand">Educ-App</a>
+			<p>Vos titoriales entre vos mains</p>
 		</div>
-		<ul>
-			<li><a href="#pres">Accueil</a></li>
-			<li><a href="#membres">Membres</a></li>
-			<li><a href="#galeries">Galeries</a></li>
-			<li><a href="#contact">Contact</a></li>
+		<ul class="nav">
+			<li class="nav-item"><a href="#pres">Accueil</a></li>
+			<li class="nav-item"><a href="#services">services</a></li>
+			<li class="nav-item"><a href="#galeries">Galeries</a></li>
+			<li class="nav-item"><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 
@@ -60,140 +60,47 @@
 	    </section>
 	    <!--End Slider-->
 
-	    <!--Presentation de l'Assoc-->
-		<section class="pres" id="pres">
-			<h2>Bienvenue sur notre association AdjiP</h2>
-				<img src="imgs/med.jpg" alt="photo du president Adjip">
-		
-			<div class="mot_bienvenue">
-				<p>Je voudrais vous souhaiter la bienvenue sur le site web de l’association des Djiboutiens de Provence (ADjiP), j’espère que vous aurez autant de plaisir à découvrir ce site que nous en avons eu à le construire et que vos contributions nous permettrons de mieux nous connaître.</p>
-
-				<p>Notre association a été fondée le 3 mai 1948 et s’appelait à l’époque l’« Amicale des Originaires de Djibouti » constituée essentiellement de navigateurs venus s’installer dans leur port d’attache: Marseille!. Ces navigateurs ont souhaité créer cette association afin de faciliter l’accueil et l’intégration des familles djiboutiennes venues s’installer à Marseille, capitale européenne de la culture en 2013.</p>
-
-				<p>Je tiens à leur rendre hommage pour avoir pris cette initiative et su préservé les intérêts de notre association depuis. Je suis particulièrement reconnaissant aux fondateurs M. Ali GHALEB, Elmi ABDI, Farah OBSIEH, Hassan ROBLEH, Abdou HACHIMI, Mohamed GAAS et M. Ali Mead, tenancier d’un bar/café à la Joliette où les membres de l’association, à l’origine tous navigants, se retrouvaient pour leurs moments d’échange et partage.</p>
-			</div>
+	  <!--Start Section Membres-->
+		<section class="services" id="services">
+			<h2>Nos services</h2>
+			<ul class="box">
+				<li>
+					<img src="imgs/service_1.jpeg" alt="service_1">
+					<label>Disponible de 24h/24 à 7j/7</label>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ipsa quae possimus, dolores sint odio delectus.</p>
+				</li>
+				<li>
+					<img src="imgs/service_2.jpg" alt="service_2">
+					<label>Epoler par des expert</label>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ad doloribus impedit ipsam est laborum eveniet amet?</p>
+				</li>
+				<li>
+					<img src="imgs/service_3.jpeg" alt="service_3">
+					<label>Satisfait ou Rembourser</label>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia dolore eveniet eaque aliquam eius cumque dolor ab fuga maxime.</p>
+				</li>
+				<li>
+					<img src="imgs/service_4.jpeg" alt="service_4">
+					<label>Q&A et Forum de discussion</label>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab cum optio, aperiam totam sit facilis.</p>
+				</li>
+			</ul>
 		</section>
-
-	    <!--End Presentation de L'ASSOC-->
-
-	    <!--Start Section Membres-->
-		<section class="membres" id="membres">
-			<h2>Organisation des membres AdjiP</h2>
-			<div class="chef">
-				<img src="imgs/med.jpg" alt="president Adjip">
-				<p>Président AdjiP</p>
+	  <!--End Section Membres-->
+		<!--Partenaires-->		
+		<section class=" slider-slick">
+			<h2>Nos partenaires</h2>
+			<div id="customer-logos">
+				<div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+				<div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+				<div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+				<div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+				<div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+				<div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+				<div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+				<div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
 			</div>
-
-			<div class="sous-chef" ">
-
-				<article>
-					<img src="imgs/team1.jpg" alt="" width="200" height="200">
-					<p>Comptable AjiP</p>
-				</article>
-				
-				<article>
-					<img src="imgs/team2.jpg" alt="" width="200" height="200">
-					<p>Chargé de Communication</p>
-				</article>
-					
-				<article>
-					<img src="imgs/team3.jpg" alt="" width="200" height="200">
-					<p>Informaticien chez AdjiP</p>
-				</article>
-
-				<article>
-					<img src="imgs/team4.jpg" alt="" width="200" height="200">
-					<p>Directrice Adjointe AdjiP</p>
-				</article>
-
-			</div>
-		</section>
-	    <!--End Section Membres-->
-
-	    <!--Start Galeries-->
-		<section class="galeries" id="galeries">
-			<h2>Galeries des photos</h2>
-			<img class="myImg" src="imgs/img1.jpeg" alt="Snow" width="300" height="200">
-			<img class="myImg" src="imgs/img2.jpeg" alt="Snow" width="300" height="200">
-			<img class="myImg" src="imgs/img3.jpeg" alt="Snow"width="300" height="200">
-
-			<img class="myImg" src="imgs/img4.jpeg" alt="Snow"width="300" height="200">
-			<img class="myImg" src="imgs/img5.jpeg" alt="Snow"width="300" height="200">
-			<img class="myImg" src="imgs/img6.jpeg" alt="Snow"width="300" height="200">
-
-			<img class="myImg" src="imgs/img7.jpeg" alt="Snow"width="300" height="200">
-			<img class="myImg" src="imgs/img8.jpeg" alt="Snow"width="300" height="200">
-			
-			           
-
-						<!-- The Modal -->
-			<div id="myModal" class="modal">
-			  <span class="close">&times;</span>
-			  <img class="modal-content" id="img01">
-			  <div id="caption"></div>
-			</div>
-		</section>
-	
-	    <!--End Galeries-->
-	    <!--Start Adresses -->
-		<section class="adresse">
-	    	<h2>Les Adresses utiles</h2>
-			<button class="accordion">Préfecture de Marseille</button>
-		<div class="panel">
-		  <ul>
-		  	<li><a href="http://13.accueil-etrangers.gouv.fr/">Accueil des Etrangers</a></li>
-		  	<li><a href="http://www.bouches-du-rhone.gouv.fr/Demarches-administratives">Démarches Administratives</a></li>
-		  </ul>
-		</div>
-
-		<button class="accordion">Ambassade de Djibouti</button>
-		<div class="panel">
-		  <ul>
-		  	<li><a href="">Ambassade de Djibouti</a></li>
-		  	<li><a href="">Consulat de l'Amb.de Djibouti(services de Visas)</a></li>
-		  </ul>
-		</div>
-
-		<button class="accordion">Démarches Etudiantes</button>
-		<div class="panel">
-		  <ul>
-		  	<li><a href="">Aix-Marseille Université</a></li>
-		  	<li><a href="">Crouse,Aix-Marseille</a></li>
-		  	<li><a href="">Résidence Etudiants(Odalys-Campus)</a></li>
-		  </ul>
-		</div>
-		<button class="accordion">Liens divers</button>
-		<div class="panel">
-		 <ul>
-		 	<li><a href="">Pompe funebre(Nour-El-Islam)</a></li>
-		 </ul>
-		</div>
-
-	    </section>
-	    <!--End Adresses-->
-
-	    <!--Partenaires-->
-		<section class="partenaire">
-			<h2>Nos Partenaires</h2>
-			<div class="part-logo">
-				<article>
-					<img src="imgs/port.jpg" alt="photo de port" width="200" height="200">
-				</article>
-	            <article>
-					<img src="imgs/telecom.jpg" alt="djibouti telecom" width="200" height="200">
-				</article>
-
-				<article>
-					<img src="imgs/armeng.jpg" alt="armeng logo" width="200" height="200">
-				</article>
-
-				<article>
-					<img src="imgs/dahab.jpg" alt="dahab logo" width="200" height="200">
-				</article>
-		</div>
-
-			
-		</section>
+   </section>
 
 	    <!--End Partenaires-->
 
@@ -209,9 +116,7 @@
 	    <!--Start Contact -->
 
 	    <section class="contact" id="contact">
-	    	<h2>Contactez-Nous</h2>
-	    	
-		
+	    	<h2>Nous faire un p'tit coucou!</h2>
 	    	<form method="post" id="formContact">
 	    		<input type="text" name="name" id="name" placeholder="Votre nom">
 
@@ -223,9 +128,7 @@
 
 	    		<input type="text" id="subject" name="subject" placeholder="Votre sujet">
 	    		<span id="subjectError" style="color: red;margin-top: 5px; margin-left: 8px;margin-bottom: 5px;float: left;"></span>
-
-	    		<input type="text" name="message" id="message" placeholder="Votre message">
-
+					<textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
 	    		<span id="messageError" style="color: red;margin-top: 5px; margin-left: 8px;margin-bottom: 5px;float: left;"></span>
 	    		
                 <input type="submit" name="submit" value="Envoyer">
@@ -239,8 +142,8 @@
 	<!--Start Footer-->
 	<footer>
 		<article>
-			<h3>A propos AdjiP</h3>
-			<p>Notre association a été fondée le 3 mai 1948 et s’appelait à l’époque l’« Amicale des Originaires de Djibouti » constituée essentiellement de navigateurs venus s’installer dans leur port d’attache: Marseille!. Ces navigateurs ont souhaité créer cette association afin de faciliter l’accueil et l’intégration des familles djiboutiennes venues s’installer à Marseille, capitale européenne de la culture en 2013.</p>
+			<h3>A propos Educ-App</h3>
+			<p>Illo quod ratione corrupti dolore maiores nulla itaque, dicta veritatis magni dolores cum corporis asperiores vitae quasi ad ab placeat tempore. Eos ullam optio praesentium aliquam sapiente blanditiis, quaerat hic! Facere non tempore ullam fugit, excepturi tenetur aliquid earum placeat dicta, hic praesentium!</p>
 			<ul class="rs">
 				<li><a href=""><i class="fab fa-facebook"></i></a></li>
 				<li><a href=""><i class="fab fa-youtube"></i></a></li>
@@ -282,7 +185,8 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   	<script src="js/main.js"></script>
   	<script src="js/accordion.js"></script>
 
@@ -417,7 +321,26 @@
 
   			});
 
-       
+       $('#customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
   			
   		});
   	</script>
