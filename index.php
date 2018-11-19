@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +10,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<!--Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<!--BxSlider-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	
 	<!--Normalize CSS-->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -54,7 +54,7 @@
 	<!--Start Main-->
 	<main>
 		<!--Start Slider-->
-		<section class="slider">
+		<section id="slider">
 			<img src="imgs/slide1.jpg" alt="Slider num 1">
 			<img src="imgs/slide2.jpg" alt="Slider num 2">
 	    </section>
@@ -107,17 +107,22 @@
 	    <!--Start Newsletter-->
 	    <section class="newsletter">
 	    	<h2>S'abonner à notre newsletter</h2>
-	    	<form method="post" action="#">
-	    		<input type="email" name="email" placeholder="tape votre adresse e-mail" required="required">
-	    		<button>S'abonner</button>
+			<p id="success" style="color:#2ecc71">Votre inscription à notre newsletter à été bien pris en compte</p>
+	    	<form  action="index.php" onsubmit="return false">
+	    		<input type="email" name="email1" placeholder="tape votre adresse e-mail">
+	    		<button name="subscribe" id="subscribe">S'abonner</button>
+				
 	    	</form>
+			
 	    </section>
 
 	    <!--Start Contact -->
 
 	    <section class="contact" id="contact">
 	    	<h2>Nous faire un p'tit coucou!</h2>
-	    	<form method="post" id="formContact">
+
+			<p id="form-success" style="color:#27ae60"></p>
+	    	<form  id="formContact" method="post" action="index.php" onsubmit="return false">
 	    		<input type="text" name="name" id="name" placeholder="Votre nom">
 
 	    		<span id="nameError" style="color: red;margin-top: 5px; margin-left: 8px;margin-bottom: 5px;float: left;"></span>
@@ -185,7 +190,7 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   	<script src="js/main.js"></script>
   	<script src="js/accordion.js"></script>
@@ -194,7 +199,17 @@
   		$(document).ready(function(){
 
 
-  			var result = true;
+			  var result = true;
+			
+			  $('#success').hide();
+			  $('#subscribe').click(function(){
+				
+				$('#success').show();
+			
+				
+			});
+
+	
 
   			$('#formContact').submit(function(){
                
@@ -206,7 +221,8 @@
   					$('#name').css('border-color', 'red');
 
   				       result = false;
-  				}
+				  }
+				  
 
 
   				//Message Error
@@ -222,7 +238,7 @@
 
   				//Subject Error
 
-               if ($('#subject').val() == "") {
+              if ($('#subject').val() == "") {
 
   					$('#subjectError').fadeIn(500).text("Veuillez entrer un sujet");
   					$('#subject').css('border-color', 'red');
@@ -241,12 +257,18 @@
   					$('#message').css('border-color', 'red');
 
   				       result = false;
-  				}
+				  }
+				  
+
+				  else
+				  {
+					 $('#form-success').fadeIn(500).text('Votre message a bien été envoyé. Merci et à bientôt ');
+				  }
 
 
-  				return result;
+			  });
+			  
 
-  			});
              
 
              //Name error
@@ -319,7 +341,20 @@
   					$('#message').css('border-color', '#2ecc71');
   			   }
 
-  			});
+			   
+
+			  });
+	  
+	  //Slider
+
+	  $('#slider').slick({
+
+		   dots: false,
+		   arrows: false,
+		   autoplay: true,
+		   autoplaySpeed: 2000
+		  
+	  });
 
        $('#customer-logos').slick({
         slidesToShow: 6,
@@ -340,7 +375,22 @@
                 slidesToShow: 3
             }
         }]
-    });
+	});
+	
+
+	   //Scroll
+	   
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 200) {
+      $('#scroll-top').fadeIn();
+    }else{
+      $('#scroll-top').fadeOut();
+    }
+  });
+
+  $('#scroll-top').click(function(){
+    $('html, body').animate({scrollTop: 0}, 1000)
+  });
   			
   		});
   	</script>
