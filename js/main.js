@@ -1,6 +1,6 @@
 $(document).ready(function(){
   //Slider 
-  $('.slider').bxSlider();
+  
 
 	$("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
@@ -36,5 +36,7 @@ $(document).ready(function(){
     $('html, body').animate({scrollTop: 0}, 1000)
   });
       
-	//Validation du formulaire de contact
+  //Validation du formulaire de contact
+  
+  
 });
